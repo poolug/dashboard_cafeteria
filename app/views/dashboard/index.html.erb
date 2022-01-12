@@ -1,0 +1,69 @@
+<div style="margin: 0 10em 0 10em">
+  <h1 style="text-align: center">Gráficos de barra</h1>
+
+  <div>
+    <h2>Monto por mes de los últimos 12 meses de ventas</h2>
+    <%= column_chart @sales_by_month, colors: ["#109618"] %>
+  </div>
+  <hr>
+  <div>
+    <h2>Cantidad por mes de lo últimos 12 meses de ventas</h2>
+    <%= column_chart @sales_by_count_month %>
+  </div>
+  <hr>
+  <div>
+    <h2>Promedio por mes de lo últimos 12 meses de ventas</h2>
+    <%= column_chart @sales_by_average_month %>
+    <hr>
+  </div>
+
+  <div>
+    <h1 style="text-align: center">Gráficos de Torta</h1>
+    <div>
+      <h2>Cantidad por origen de los últimos 12 meses</h2>
+      <%= pie_chart @sales_origin_12 %>
+    </div>
+    <hr>
+    <div>
+      <h2>Cantidad por origen de los últimos 6 meses</h2>
+      <%= pie_chart @sales_origin_6 %>
+    </div>
+    <hr>
+    <div>
+      <h2>Cantidad por origen de los últimos 3 meses</h2>
+      <%= pie_chart @sales_origin_6 %>
+    </div>
+    <hr>
+    <div>
+      <h2>Cantidad por origen del último mes</h2>
+      <%= pie_chart @sales_origin_1 %>
+    </div>
+    <hr>
+  </div>
+
+    <div>
+    <h1 style="text-align: center">Gráficos de Torta por Mezcla del café</h1>
+    <div>
+      <h2>Cantidad por mezcla de los últimos 12 meses</h2>
+      <%= pie_chart @sales_blend_12 %>
+    </div>
+    <hr>
+    <div>
+      <h2>Cantidad por mezcla de los últimos 6 meses</h2>
+      <%= pie_chart @sales_blend_6 %>
+    </div>
+    <hr>
+    <div>
+      <h2>Cantidad por mezcla de los últimos 3 meses</h2>
+      <%= pie_chart @sales_origin_3 %>
+    </div>
+    <hr>
+    <div>
+      <h2>Cantidad por mezcla del último mes</h2>
+      <%= pie_chart @sales_origin_3 %>
+    </div>
+
+
+  </div>
+
+</div>

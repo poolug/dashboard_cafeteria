@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2022-01-08
+  product: one
+  quantity: 1
+  price: 1
+
+two:
+  date: 2022-01-08
+  product: two
+  quantity: 1
+  price: 1
